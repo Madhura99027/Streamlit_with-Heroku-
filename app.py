@@ -34,16 +34,16 @@ st.write("you selected",algo)
 
 if algo=='LogisticRegression':
 	 
-	model=pickle.load(open('logistic.pkl','rb'))
+	model=pickle.load(open('pickels/logistic.pkl','rb'))
 
 
 if algo=='knn':
 	 
-	model=pickle.load(open('knn.pkl','rb'))
+	model=pickle.load(open('pickels/knn.pkl','rb'))
 
 if algo=='Dtree':
 	 
-	model=pickle.load(open('dtree.pkl','rb'))
+	model=pickle.load(open('pickels/dtree.pkl','rb'))
 
 #--------------------------------------------------------------->
 
@@ -93,15 +93,15 @@ def main():
 
 		if output=='virginica':
 			st.text("Showing Virginica")
-			st.image(load_image('iris_virginica.jpg'))
+			st.image(load_image('images/iris_virginica.jpg'))
 			
 		if output=='versicolor':
 			st.text("Showing Versicolor")
-			st.image(load_image('iris_versicolor.jpg'))
+			st.image(load_image('images/iris_versicolor.jpg'))
 
 		if output=='setosa':
 			st.text("Showing Setosa")
-			st.image(load_image('iris_setosa.jpg'))
+			st.image(load_image('images/iris_setosa.jpg'))
 
 
 

@@ -34,7 +34,7 @@ logit.fit(X_train,Y_train)
 #saving the model using pickle
 import pickle
 
-pickle.dump(logit,open('logistic.pkl','wb'))
+pickle.dump(logit,open('pickels/logistic.pkl','wb'))
 
 
 #--------------------------------------------->
@@ -45,7 +45,7 @@ knn = KNeighborsClassifier()
 knn.fit(X_train, Y_train)
 #save the model
 
-pickle.dump(knn,open('knn.pkl','wb'))
+pickle.dump(knn,open('pickels/knn.pkl','wb'))
  
 #-------------------------------------------->
 
@@ -57,4 +57,4 @@ dtree.fit(X_train, Y_train)
 
 #save the model
 
-pickle.dump(dtree,open('dtree.pkl','wb'))
+pickle.dump(dtree,open('pickels/dtree.pkl','wb'))
